@@ -9,5 +9,6 @@ namespace ElectricityUsageDashboard.Data
             : base(options)
         {
         }
+
     }
 }
