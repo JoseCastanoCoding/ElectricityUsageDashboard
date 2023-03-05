@@ -10,5 +10,7 @@ namespace ElectricityUsageDashboard.Data
 
         }
         public DbSet<Reading> Readings { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<UtilityCompany> UtilityCompanies { get; set; }
     }
 }
