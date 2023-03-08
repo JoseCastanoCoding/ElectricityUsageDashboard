@@ -4,6 +4,7 @@ using ElectricityUsageDashboard.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElectricityUsageDashboard.Migrations
 {
     [DbContext(typeof(ReadingsDbContext))]
-    partial class ReadingsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230308222130_NewPropertyInReadingModel")]
+    partial class NewPropertyInReadingModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

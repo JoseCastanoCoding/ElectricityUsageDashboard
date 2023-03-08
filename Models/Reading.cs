@@ -7,6 +7,7 @@ namespace ElectricityUsageDashboard.Models
 {
     public class Reading
     {
+        public int UserId { get; set; }
         public int ReadingId { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:MMM-dd-yy}")]
